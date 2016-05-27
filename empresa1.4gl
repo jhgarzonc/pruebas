@@ -105,6 +105,7 @@ END IF
 # ##CAMBIAR EMPRESAS
 {#VALIDANDO INFORMACION DE USUARIO Y PERFIL
 CALL fgl_getenv("LOGNAME") RETURNING g_usuario
+LET g_programa= "empresa"
 LET g_programa="empresa"
 SELECT per_codperfil INTO g_perfil FROM top_usuarios 
 WHERE usr_userid=g_usuario
