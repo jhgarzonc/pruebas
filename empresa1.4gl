@@ -102,7 +102,7 @@ IF arg_val(1)="M" THEN
   LET nombre=ui.Interface.getName()
   DISPLAY nombre
 END IF  
-
+# ##CAMBIAR EMPRESAS
 {#VALIDANDO INFORMACION DE USUARIO Y PERFIL
 CALL fgl_getenv("LOGNAME") RETURNING g_usuario
 LET g_programa="empresa"
